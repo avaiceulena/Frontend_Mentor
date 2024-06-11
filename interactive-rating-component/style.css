@@ -1,0 +1,116 @@
+/* General styles */
+body {
+    background-color: hsl(220, 9%, 7%);
+    font-family: 'Overpass';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+}
+
+/* Container styles */
+.container {
+    background: hsl(213, 19%, 18%);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 375px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-image {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsl(212, 23%, 15%);
+    margin-bottom: 20px; 
+}
+
+.image {
+    width: 14px;
+    height: 14px;
+}
+
+/* Rating container */
+.rating-container {
+    width: 100%; 
+}
+
+.rating-container h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+.rating-container p {
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    margin: 0 0 20px 0;
+}
+
+/* Rating buttons */
+.rating-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+.rating-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(212, 23%, 15%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-button.selected {
+    background: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 8%);
+}
+
+.rating-button:hover {
+    background: hsl(25, 97%, 53%);
+}
+
+/* Submit button */
+#submit-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#submit-button:hover {
+    background: hsl(0, 0%, 100%);
+}
+
+/* Thank you container */
+.thank-you-container {
+    display: none;
+    text-align: center;
+}
+
+.thank-you-container .rating-message p {
+    color: hsl(217, 12%, 63%);
+    font-size: 1.2em;
+}
